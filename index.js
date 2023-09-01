@@ -13,7 +13,8 @@ const port = 3000;
 
 // define a route
 app.get('/', (req, res) => {
-    res.send('Hello World! 2023');
+    var currentDate = new Date();
+    res.send(`Hello World! ${currentDate.getFullYear()}!`);	
     }
 );
 
